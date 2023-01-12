@@ -324,7 +324,7 @@ class HDGarand:AutoReloadingThingy{
 			sb.drawnum(hpl.countinv(clip),-43,-8,sb.DI_SCREEN_CENTER_BOTTOM);
 		}
 		if(hdw.weaponstatus[0]&GARF_BUMP){
-			string llba="RBRSA3A7";
+			string llba="STSEMAUT";
 			if(hdw.weaponstatus[0]&GARF_BRRT)llba="STFULAUT";
 			sb.drawimage(
 				llba,(-22,-10),
@@ -829,7 +829,7 @@ class HDGarandClip:HDMagAmmo{
 		else if(thismagamt>1)magsprite="GCLPG0";
 		else if(thismagamt>0)magsprite="GCLPH0";
 		else magsprite="GCLPI0";
-		return magsprite,"RBRSA3A7","SevenMilAmmo",1.5;
+		return magsprite,"7RNDA0","SevenMilAmmo",1.5;
 	}
 	override void GetItemsThatUseThis(){
 		itemsthatusethis.push("HDGarand");
@@ -873,7 +873,7 @@ class HDGarand3006Clip:HDGarandClip{
 		else if(thismagamt>1)magsprite="GCLPG0";
 		else if(thismagamt>0)magsprite="GCLPH0";
 		else magsprite="GCLPI0";
-		return magsprite,"RBRSA3A7","ThirtyAughtSixAmmo",1.5;
+		return magsprite,"7RNDA0","ThirtyAughtSixAmmo",1.5;
 	}
 }
 
