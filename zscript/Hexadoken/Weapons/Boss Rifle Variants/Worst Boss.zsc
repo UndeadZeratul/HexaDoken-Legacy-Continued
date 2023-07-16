@@ -43,7 +43,7 @@ class BossRifleButItsTheWorst:BossRifle{
 	override string,double getpickupsprite(){return "BOJG[0",1.;}
 	override void DrawHUDStuff(HDStatusBar sb,HDWeapon hdw,HDPlayerPawn hpl){
 		if(sb.hudlevel==1){
-			sb.drawimage("STSEMAUT",(-54,-10),sb.DI_SCREEN_CENTER_BOTTOM,scale:(2.1,2.1));
+			sb.drawimage("7RNDA0",(-54,-10),sb.DI_SCREEN_CENTER_BOTTOM,scale:(2.1,2.1));
 			sb.drawnum(hpl.countinv("SevenMilAmmo"),-51,-8,sb.DI_SCREEN_CENTER_BOTTOM);
 		}
 		if(hdw.weaponstatus[BOSSS_CHAMBER]) {
