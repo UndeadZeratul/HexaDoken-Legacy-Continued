@@ -12,7 +12,7 @@ class BossRifleButIts4mm:BossRifle{
 	override string,double getpickupsprite(){return "BOJGZ0",1.;}
 	override void DrawHUDStuff(HDStatusBar sb,HDWeapon hdw,HDPlayerPawn hpl){
 		if(sb.hudlevel==1){
-			sb.drawimage("RCLSA3A7",(-54,-10),sb.DI_SCREEN_CENTER_BOTTOM,scale:(2.1,2.1));
+			sb.drawimage("4RNDA0",(-54,-10),sb.DI_SCREEN_CENTER_BOTTOM,scale:(2.1,2.1));
 			sb.drawnum(hpl.countinv("FourMilAmmo"),-51,-8,sb.DI_SCREEN_CENTER_BOTTOM);
 		}
 		sb.drawwepnum(hdw.weaponstatus[BOSSS_MAG],10);
