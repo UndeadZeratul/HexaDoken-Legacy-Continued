@@ -54,15 +54,15 @@ OptionMenu 9mmBoss {
 
 	StaticText "$MENU_SPAWNOPTIONS", "Orange"
     StaticText  "$MENU_9MMBOSS_BOSS_SPAWNTEXT", "white"
-	ScaleSlider "$MENU_9MMBOSSSPAWNRATE", "boss9mm_boss_spawn_bias", -1, 999, 1, "$MENU_REPLACEALL", "$MENU_DISABLED"
+	Slider "$MENU_9MMBOSSSPAWNRATE", "boss9mm_boss_spawn_bias",  0.0, 1000, .01, 3
 	SafeCommand "$MENU_RESETWEP", "resetcvar boss9mm_boss_spawn_bias"
  	StaticText ""
     StaticText  "$MENU_9MMBOSS_PISTOL_SPAWNTEXT", "white"
-	ScaleSlider "$MENU_9MMBOSSSPAWNRATE", "boss9mm_pistol_spawn_bias", -1, 999, 1, "$MENU_REPLACEALL", "$MENU_DISABLED"
+	Slider "$MENU_9MMBOSSSPAWNRATE", "boss9mm_pistol_spawn_bias",  0.0, 1000, .01, 3
 	SafeCommand "$MENU_RESETWEP", "resetcvar boss9mm_pistol_spawn_bias"
  	StaticText ""
     StaticText  "$MENU_9MMBOSS_CLIPBOX_SPAWNTEXT", "white"
-	ScaleSlider "$MENU_9MMBOSSSPAWNRATE", "boss9mm_clipbox_spawn_bias", -1, 999, 1, "$MENU_REPLACEALL", "$MENU_DISABLED"
+	Slider "$MENU_9MMBOSSSPAWNRATE", "boss9mm_clipbox_spawn_bias",  0.0, 1000, .01, 3
 	SafeCommand "$MENU_RESETWEP", "resetcvar boss9mm_clipbox_spawn_bias"
  	StaticText ""
 
@@ -99,11 +99,11 @@ OptionMenu 4mmBoss {
 
 	StaticText "$MENU_SPAWNOPTIONS", "Orange"
     StaticText  "$MENU_4MMBOSS_BOSS_SPAWNTEXT", "white"
-	ScaleSlider "$MENU_4MMBOSSSPAWNRATE", "boss4mm_boss_spawn_bias", -1, 999, 1, "$MENU_REPLACEALL", "$MENU_DISABLED"
+	Slider "$MENU_4MMBOSSSPAWNRATE", "boss4mm_boss_spawn_bias",  0.0, 1000, .01, 3
 	SafeCommand "$MENU_RESETWEP", "resetcvar boss4mm_boss_spawn_bias"
  	StaticText ""
     StaticText  "$MENU_4MMBOSS_CHAINGUN_SPAWNTEXT", "white"
-	ScaleSlider "$MENU_4MMBOSSSPAWNRATE", "boss4mm_chaingun_spawn_bias", -1, 999, 1, "$MENU_REPLACEALL", "$MENU_DISABLED"
+	Slider "$MENU_4MMBOSSSPAWNRATE", "boss4mm_chaingun_spawn_bias",  0.0, 1000, .01, 3
 	SafeCommand "$MENU_RESETWEP", "resetcvar boss4mm_chaingun_spawn_bias"
  	StaticText ""
 
@@ -140,15 +140,15 @@ OptionMenu BasRifle {
 
 	StaticText "$MENU_SPAWNOPTIONS", "Orange"
     StaticText  "$MENU_BAS_BOSS_SPAWNTEXT", "white"
-	ScaleSlider "$MENU_BASSPAWNRATE", "bas_boss_spawn_bias", -1, 999, 1, "$MENU_REPLACEALL", "$MENU_DISABLED"
+	Slider "$MENU_BASSPAWNRATE", "bas_boss_spawn_bias",  0.0, 1000, .01, 3
 	SafeCommand "$MENU_RESETWEP", "resetcvar bas_boss_spawn_bias"
     StaticText ""
     StaticText  "$MENU_BAS_HUNTER_SPAWNTEXT", "white"
-	ScaleSlider "$MENU_BASSPAWNRATE", "bas_hunter_spawn_bias", -1, 999, 1, "$MENU_REPLACEALL", "$MENU_DISABLED"
+	Slider "$MENU_BASSPAWNRATE", "bas_hunter_spawn_bias",  0.0, 1000, .01, 3
 	SafeCommand "$MENU_RESETWEP", "resetcvar bas_hunter_spawn_bias"
     StaticText ""
     StaticText  "$MENU_BAS_SLAYER_SPAWNTEXT", "white"
-	ScaleSlider "$MENU_BASSPAWNRATE", "bas_slayer_spawn_bias", -1, 999, 1, "$MENU_REPLACEALL", "$MENU_DISABLED"
+	Slider "$MENU_BASSPAWNRATE", "bas_slayer_spawn_bias",  0.0, 1000, .01, 3
 	SafeCommand "$MENU_RESETWEP", "resetcvar bas_slayer_spawn_bias"
     StaticText ""
 
@@ -185,15 +185,15 @@ OptionMenu BogRifle {
 
 	StaticText "$MENU_SPAWNOPTIONS", "Orange"
     StaticText  "$MENU_BOG_BOSS_SPAWNTEXT", "white"
-	ScaleSlider "$MENU_BOGSPAWNRATE", "bog_boss_spawn_bias", -1, 999, 1, "$MENU_REPLACEALL", "$MENU_DISABLED"
+	Slider "$MENU_BOGSPAWNRATE", "bog_boss_spawn_bias",  0.0, 1000, .01, 3
 	SafeCommand "$MENU_RESETWEP", "resetcvar bog_boss_spawn_bias"
     StaticText ""
     StaticText  "$MENU_BOG_PLASMA_SPAWNTEXT", "white"
-	ScaleSlider "$MENU_BOGSPAWNRATE", "bog_plasma_spawn_bias", -1, 999, 1, "$MENU_REPLACEALL", "$MENU_DISABLED"
+	Slider "$MENU_BOGSPAWNRATE", "bog_plasma_spawn_bias",  0.0, 1000, .01, 3
 	SafeCommand "$MENU_RESETWEP", "resetcvar bog_plasma_spawn_bias"
     StaticText ""
     StaticText  "$MENU_BOG_BFG_SPAWNTEXT", "white"
-	ScaleSlider "$MENU_BOGSPAWNRATE", "bog_bfg_spawn_bias", -1, 999, 1, "$MENU_REPLACEALL", "$MENU_DISABLED"
+	Slider "$MENU_BOGSPAWNRATE", "bog_bfg_spawn_bias",  0.0, 1000, .01, 3
 	SafeCommand "$MENU_RESETWEP", "resetcvar bog_bfg_spawn_bias"
     StaticText ""
 
@@ -232,11 +232,11 @@ OptionMenu 5mmBoss {
 
 	StaticText "$MENU_SPAWNOPTIONS", "Orange"
     StaticText  "$MENU_5MMBOSS_BOSS_SPAWNTEXT", "white"
-	ScaleSlider "$MENU_5MMBOSSSPAWNRATE", "boss5mm_boss_spawn_bias", -1, 999, 1, "$MENU_REPLACEALL", "$MENU_DISABLED"
+	Slider "$MENU_5MMBOSSSPAWNRATE", "boss5mm_boss_spawn_bias",  0.0, 1000, .01, 3
 	SafeCommand "$MENU_RESETWEP", "resetcvar boss5mm_boss_spawn_bias"
  	StaticText ""
     StaticText  "$MENU_5MMBOSS_CHAINGUN_SPAWNTEXT", "white"
-	ScaleSlider "$MENU_5MMBOSSSPAWNRATE", "boss5mm_chaingun_spawn_bias", -1, 999, 1, "$MENU_REPLACEALL", "$MENU_DISABLED"
+	Slider "$MENU_5MMBOSSSPAWNRATE", "boss5mm_chaingun_spawn_bias",  0.0, 1000, .01, 3
 	SafeCommand "$MENU_RESETWEP", "resetcvar boss5mm_chaingun_spawn_bias"
  	StaticText ""
 
@@ -273,7 +273,7 @@ OptionMenu HexaNoScopeBoss {
 
 	StaticText "$MENU_SPAWNOPTIONS", "Orange"
     StaticText  "$MENU_NSB_BOSS_SPAWNTEXT", "white"
-	ScaleSlider "$MENU_NSBSPAWNRATE", "nsb_boss_spawn_bias", -1, 999, 1, "$MENU_REPLACEALL", "$MENU_DISABLED"
+	Slider "$MENU_NSBSPAWNRATE", "nsb_boss_spawn_bias",  0.0, 1000, .01, 3
 	SafeCommand "$MENU_RESETWEP", "resetcvar nsb_boss_spawn_bias"
  	StaticText ""
 
@@ -310,7 +310,7 @@ OptionMenu WorstBoss {
 
 	StaticText "$MENU_SPAWNOPTIONS", "Orange"
     StaticText  "$MENU_WORST_BOSS_SPAWNTEXT", "white"
-	ScaleSlider "$MENU_WORSTSPAWNRATE", "worstBoss_boss_spawn_bias", -1, 999, 1, "$MENU_REPLACEALL", "$MENU_DISABLED"
+	Slider "$MENU_WORSTSPAWNRATE", "worstBoss_boss_spawn_bias",  0.0, 1000, .01, 3
 	SafeCommand "$MENU_RESETWEP", "resetcvar worstBoss_boss_spawn_bias"
  	StaticText ""
 
@@ -347,10 +347,10 @@ OptionMenu M1Garand {
 
 	StaticText "$MENU_SPAWNOPTIONS", "Orange"
     StaticText  "$MENU_GARAND_CHAINGUN_SPAWNTEXT", "white"
-	ScaleSlider "$MENU_GARANDSPAWNRATE", "gar_chaingun_spawn_bias", -1, 999, 1, "$MENU_REPLACEALL", "$MENU_DISABLED"
+	Slider "$MENU_GARANDSPAWNRATE", "gar_chaingun_spawn_bias",  0.0, 1000, .01, 3
 	SafeCommand "$MENU_RESETWEP", "resetcvar gar_chaingun_spawn_bias"
     StaticText  "$MENU_GARAND_LIBERATOR_SPAWNTEXT", "white"
-	ScaleSlider "$MENU_GARANDSPAWNRATE", "gar_liberator_spawn_bias", -1, 999, 1, "$MENU_REPLACEALL", "$MENU_DISABLED"
+	Slider "$MENU_GARANDSPAWNRATE", "gar_liberator_spawn_bias",  0.0, 1000, .01, 3
 	SafeCommand "$MENU_RESETWEP", "resetcvar gar_liberator_spawn_bias"
  	StaticText ""
 
@@ -402,15 +402,15 @@ OptionMenu DMS {
 
 	StaticText "$MENU_SPAWNOPTIONS", "Green"
     StaticText  "$MENU_DMSSTIMPACK", "white"
-	ScaleSlider "$MENU_DMSSPAWNRATE", "dms_stimpack_bias", -1, 999, 1, "$MENU_REPLACEALL", "$MENU_DISABLED"
+	Slider "$MENU_DMSSPAWNRATE", "dms_stimpack_bias",  0.0, 1000, .01, 3
 	SafeCommand "$MENU_RESETSTIMPACK", "resetcvar dms_stimpack_bias"
     StaticText ""
     StaticText  "$MENU_DMSMEDIKIT", "white"
-	ScaleSlider "$MENU_DMSSPAWNRATE", "dms_medikit_bias", -1, 999, 1, "$MENU_REPLACEALL", "$MENU_DISABLED"
+	Slider "$MENU_DMSSPAWNRATE", "dms_medikit_bias",  0.0, 1000, .01, 3
 	SafeCommand "$MENU_RESETMEDIKIT", "resetcvar dms_medikit_bias"
  	StaticText ""
     StaticText  "$MENU_DMSZERK", "white"
-	ScaleSlider "$MENU_DMSSPAWNRATE", "dms_zerk_bias", -1, 999, 1, "$MENU_REPLACEALL", "$MENU_DISABLED"
+	Slider "$MENU_DMSSPAWNRATE", "dms_zerk_bias",  0.0, 1000, .01, 3
 	SafeCommand "$MENU_RESETZERK", "resetcvar dms_zerk_bias"
  	StaticText ""
 

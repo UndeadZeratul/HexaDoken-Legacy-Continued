@@ -1,0 +1,76 @@
+// Ammo Usages
+addAmmoUser => { "ammoName": "HDPistolAmmo", "name": "BossRifleButIts9mm" }
+addAmmoUser => { "ammoName": "FourMilAmmo", "name": "BossRifleButIts4mm" }
+addAmmoUser => { "ammoName": "FourMilAmmo", "name": "SpeenRunLoader" }
+addAmmoUser => { "ammoName": "HDShellAmmo", "name": "Bossmerg" }
+addAmmoUser => { "ammoName": "SevenMilAmmo", "name": "HexaNoScopeBoss" }
+addAmmoUser => { "ammoName": "SevenMilAmmo", "name": "BossRifleButItsTheWorst" }
+addAmmoUser => { "ammoName": "SevenMilAmmoRecast", "name": "HexaNoScopeBoss" }
+addAmmoUser => { "ammoName": "SevenMilBrass", "name": "SpeedRunLoader" }
+addAmmoUser => { "ammoName": "HD5MM_Ammo", "name": "BossRifleButItsFuckingPink" }
+addAmmoUser => { "ammoName": "HD50OMGAmmo", "name": "BogRifle" }
+addAmmoUser => { "ammoName": "ThirtyAughtSixAmmo", "name": "HDGarand" }
+
+addAmmoUser => { "ammoName": "HD9mClip", "name": "BossRifleButIts9mm" }
+addAmmoUser => { "ammoName": "HD7mClip", "name": "HexaNoScopeBoss" }
+addAmmoUser => { "ammoName": "HDOmgClip", "name": "BogRifle" }
+addAmmoUser => { "ammoName": "HDGarandClip", "name": "HDGarand" }
+addAmmoUser => { "ammoName": "HDGarand3006Clip", "name": "HDGarand" }
+
+// Backpack Spawn Pool Filters
+addBPSpawnPoolFilter => { "name": "BossRifleButIts9mm", "allowed": "#boss9mm_allowBackpacks" }
+addBPSpawnPoolFilter => { "name": "BossRifleButIts4mm", "allowed": "#boss4mm_allowBackpacks" }
+addBPSpawnPoolFilter => { "name": "Bossmerg", "allowed": "#bas_allowBackpacks" }
+addBPSpawnPoolFilter => { "name": "BogRifle", "allowed": "#bog_allowBackpacks" }
+addBPSpawnPoolFilter => { "name": "BossRifleButItsFuckingPink", "allowed": "#boss5mm_allowBackpacks" }
+addBPSpawnPoolFilter => { "name": "HexaNoScopeBoss", "allowed": "#nsb_allowBackpacks" }
+addBPSpawnPoolFilter => { "name": "BossRifleButItsTheWorst", "allowed": "#worstBoss_allowBackpacks" }
+addBPSpawnPoolFilter => { "name": "HDGarand", "allowed": "#gar_allowBackpacks" }
+
+addBPSpawnPoolFilter => { "name": "HDOmgClip", "allowed": "#bogmag_allowBackpacks" }
+addBPSpawnPoolFilter => { "name": "HDGarandClip", "allowed": "#garmag_allowBackpacks" }
+addBPSpawnPoolFilter => { "name": "HDGarand3006Clip", "allowed": "#garmag_allowBackpacks" }
+addBPSpawnPoolFilter => { "name": "HDGarandClipGiver", "allowed": "#garmag_allowBackpacks" }
+
+// Boss Rifle Spawn Table
+newSpawnTable => { "spawnName": "BossRifleSpawner", "addOriginalThing": "true", "persists": "true" }
+
+// 9mm Boss Rifle Spawn Entries
+addSpawnTableSingleEntry => { "tableName": "BossRifleSpawner", "name": "BossRifleNine", "weight": "#boss9mm_boss_spawn_bias", "persists": "#boss9mm_persistent_spawning" }
+addSpawnTableSingleEntry => { "tableName": "PistolReplaces", "name": "BossRifleNine", "weight": "#boss9mm_pistol_spawn_bias", "persists": "#boss9mm_persistent_spawning" }
+addSpawnTableSingleEntry => { "tableName": "ClipBoxReplaces", "name": "BossRifleNine", "weight": "#boss9mm_clipbox_spawn_bias", "persists": "#boss9mm_persistent_spawning" }
+
+// 4mm Boss Rifle Spawn Entries
+addSpawnTableSingleEntry => { "tableName": "BossRifleSpawner", "name": "BossRifleFour", "weight": "#boss4mm_boss_spawn_bias", "persists": "#boss4mm_persistent_spawning" }
+addSpawnTableSingleEntry => { "tableName": "ChaingunReplaces", "name": "BossRifleFour", "weight": "#boss4mm_chaingun_spawn_bias", "persists": "#boss4mm_persistent_spawning" }
+
+// 12ga Boss Rifle Spawn Entries
+addSpawnTableSingleEntry => { "tableName": "BossRifleSpawner", "name": "Bossmerg", "weight": "#bas_boss_spawn_bias", "persists": "#bas_persistent_spawning" }
+addSpawnTableSingleEntry => { "tableName": "ShotgunReplaces", "name": "BossRifleNine", "weight": "#bas_hunter_spawn_bias", "persists": "#bas_persistent_spawning" }
+addSpawnTableSingleEntry => { "tableName": "SuperShotgunReplaces", "name": "BossRifleNine", "weight": "#bas_slayer_spawn_bias", "persists": "#bas_persistent_spawning" }
+
+// .50 OMG Boss Rifle Spawn Entries
+addSpawnTableSingleEntry => { "tableName": "BossRifleSpawner", "name": "BogRifleSpawner", "weight": "#bog_boss_spawn_bias", "persists": "#bog_persistent_spawning" }
+addSpawnTableSingleEntry => { "tableName": "PlasmaReplaces", "name": "BogRifleSpawner", "weight": "#bog_plasma_spawn_bias", "persists": "#bog_persistent_spawning" }
+addSpawnTableSingleEntry => { "tableName": "BFG9000Replaces", "name": "BogRifleSpawner", "weight": "#bog_bfg_spawn_bias", "persists": "#bog_persistent_spawning" }
+
+// 5mm Boss Rifle Spawn Entries
+addSpawnTableSingleEntry => { "tableName": "BossRifleSpawner", "name": "BossRifleButItsFuckingPink", "weight": "#boss5mm_boss_spawn_bias", "persists": "#boss5mm_persistent_spawning" }
+addSpawnTableSingleEntry => { "tableName": "ChaingunReplaces", "name": "BossRifleButItsFuckingPink", "weight": "#boss5mm_chaingun_spawn_bias", "persists": "#boss5mm_persistent_spawning" }
+
+// No-Scope Boss Rifle Spawn Entries
+addSpawnTableSingleEntry => { "tableName": "BossRifleSpawner", "name": "HexaNoScopeBossSpawner", "weight": "#nsb_boss_spawn_bias", "persists": "#nsb_persistent_spawning" }
+
+// The Worst Boss Rifle Spawn Entries
+addSpawnTableSingleEntry => { "tableName": "BossRifleSpawner", "name": "BossRifleButItsTheWorst", "weight": "#worstBoss_boss_spawn_bias", "persists": "#worstBoss_persistent_spawning" }
+
+// M1 Garand Spawn Entries
+addSpawnTableSingleEntry => { "tableName": "ChaingunReplaces", "name": "HDGarandRandom", "weight": "#gar_chaingun_spawn_bias", "persists": "#gar_persistent_spawning" }
+
+newSpawnTable => { "spawnName": "LiberatorRandom", "addOriginalThing": "true", "persists": "true" }
+addSpawnTableSingleEntry => { "tableName": "LiberatorRandom", "name": "HDGarandRandom", "weight": "#gar_boss_spawn_bias", "persists": "#gar_persistent_spawning" }
+
+// Medical Scanner Spawn Entries
+addSpawnTableSingleEntry => { "tableName": "StimpackReplaces", "name": "HDScanner", "weight": "#dms_stimpack_bias", "persists": "#dms_persistent_spawning" }
+addSpawnTableSingleEntry => { "tableName": "MedikitReplaces", "name": "HDScanner", "weight": "#dms_medikit_bias", "persists": "#dms_persistent_spawning" }
+addSpawnTableSingleEntry => { "tableName": "BerserkReplaces", "name": "HDScanner", "weight": "#dms_zerk_bias", "persists": "#dms_persistent_spawning" }

@@ -7,8 +7,6 @@ const HDLD_OMGBOSS   = "bog";
 const HDLD_5MMBOSS   = "";
 const HDLD_WORSTBOSS = "";
 
-#include "zscript/Hexadoken/SpawnHandler.zsc"
-
 #include "zscript/Hexadoken/Items/SpeedReloader.zsc"
 #include "zscript/Hexadoken/Items/DedicatedMedicalScanner.zsc"
 
