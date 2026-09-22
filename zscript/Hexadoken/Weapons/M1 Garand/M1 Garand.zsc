@@ -162,28 +162,29 @@ class HDGarand:AutoReloadingThingy{
 	}
 	override void actualpickup(actor other,bool silent){
 		super.actualpickup(other,silent);
-		if(!owner)return;
+		if(!other)return;
 		omegachug = false;
-		while(powders>0){
-			powders--;
-			if(owner.A_JumpIfInventory("FourMilAmmo",0,"null"))
-				owner.A_SpawnItemEx("FourMilAmmo",0,0,owner.height-16,2,0,1);
-			else HDF.Give(owner,"FourMilAmmo",1);
+		while(weaponstatus[RELS_POWDER]>0){
+			weaponstatus[RELS_POWDER]--;
+			if(other.A_JumpIfInventory("FourMilAmmo",0,"null"))
+				other.A_SpawnItemEx("FourMilAmmo",0,0,other.height-16,2,0,1);
+			else HDF.Give(other,"FourMilAmmo",1);
 		}
-		while(brass>0){
-			brass--;
-			if(owner.A_JumpIfInventory(brasstype,0,"null"))
-				owner.A_SpawnItemEx(brasstype,0,0,owner.height-16,2,0,1);
-			else HDF.Give(owner,brasstype,1);
+		while(weaponstatus[RELS_BRASS]>0){
+			weaponstatus[RELS_BRASS]--;
+			if(other.A_JumpIfInventory(brasstype,0,"null"))
+				other.A_SpawnItemEx(brasstype,0,0,other.height-16,2,0,1);
+			else HDF.Give(other,brasstype,1);
 		}
 	}
 	void A_MakeRound2(){
-		if(brass<1||powders<brasscost){
+		if(weaponstatus[RELS_BRASS]<1||weaponstatus[RELS_POWDER]<brasscost){
 			makinground=false;
 			setstatelabel("spawn");
 			return;
 		}
-		brass--;powders-=brasscost;
+		weaponstatus[RELS_BRASS]--;
+		weaponstatus[RELS_POWDER]-=brasscost;
 		A_StartSound("roundmaker/pop",10);
 		if(!random(0,63)){
 			A_SpawnItemEx("HDExplosion");
@@ -212,7 +213,7 @@ class HDGarand:AutoReloadingThingy{
 			int counter;
 			if (invoker.tas) {
 				counter=min(cap,invoker.owner.countinv("ThirtyAughtSixBrass")+invoker.owner.countinv("SevenMilBrass")/2);
-				invoker.brass=counter;
+				invoker.weaponstatus[RELS_BRASS]=counter;
 				if(counter > invoker.owner.countinv("ThirtyAughtSixBrass")) {
 					A_TakeInventory("SevenMilBrass", (counter - invoker.owner.countinv("ThirtyAughtSixBrass"))*2);
 					A_TakeInventory("ThirtyAughtSixBrass", invoker.owner.countinv("ThirtyAughtSixBrass"));
@@ -222,11 +223,11 @@ class HDGarand:AutoReloadingThingy{
 			}
 			else {
 				counter=min(cap,invoker.owner.countinv("SevenMilBrass"));
-				invoker.brass=counter;
+				invoker.weaponstatus[RELS_BRASS]=counter;
 				A_TakeInventory("SevenMilBrass",counter);
 			}
 			counter=min(cap*invoker.brasscost,countinv("FourMilAmmo"));
-			invoker.powders=counter;A_TakeInventory("FourMilAmmo",counter);
+			invoker.weaponstatus[RELS_POWDER]=counter;A_TakeInventory("FourMilAmmo",counter);
 			invoker.reloadstart = true;
 			dropinventory(invoker);
 		}
@@ -708,8 +709,8 @@ class HDGarand:AutoReloadingThingy{
 		M1A1 Z -1 {
 			if(
 				invoker.makinground
-				&&invoker.brass>0
-				&&invoker.powders>=invoker.brasscost
+				&&invoker.weaponstatus[RELS_BRASS]>0
+				&&invoker.weaponstatus[RELS_POWDER]>=invoker.brasscost
 			)setstatelabel("chug");
 		}
 		stop;
@@ -793,10 +794,11 @@ enum garandstatus{
 	GARF_BRRT=16,
 	GARF_WRONGROUND=32,
 
-	GARS_FLAGS=0,
-	GARS_MAG=1,
-	GARS_HEAT=2,
-	GARS_CHAMBER=3,
+	// RELS_BRASS=1,
+	// RELS_POWDER=2,
+	GARS_MAG=3,
+	GARS_HEAT=4,
+	GARS_CHAMBER=5,
 };
 
 class HDGarandClipGiver:HDPickupGiver {

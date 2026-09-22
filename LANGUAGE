@@ -77,6 +77,7 @@ PICKUP_OMGBOSS                   = "You got the Boss bolt-action anti-materiel r
 PICKUP_WORSTBOSS                 = "You found a... Boss Rifle, but it's the worst. Oh no...";
 
 PICKUP_50OMGCLIP                 = "Picked up a .50 OMG clip.";
+PICKUP_7MMSPEEDLOADER            = "You got the 7.76 reloading machine prototype! Note: HexaDoken Industries is not responsible for any damages caused by usage of this device.";
 
 // Obituaries
 OB_OMGBOSS                       = "%o sure showed %k who was the big boss!";
@@ -84,6 +85,8 @@ OB_OMGBOSS                       = "%o sure showed %k who was the big boss!";
 // Weapon Help Text
 WEPHELP_WORSTBOSS                = "You are beyond help.";
 WEPHELP_WORSTBOSS_CC             = "\cfMAN IS ONLY SEPARATED FROM THE HEAVENS\nBY THAT WHICH HE WILL NOT GUN.";
+
+SLWH_FIRE                        = "  Assemble rounds (Stand the hell back)\n";
 
 // Menu Titles
 TITLE_9MMBOSSMENU                = "------ 9mm Boss Rifle Options ------";
